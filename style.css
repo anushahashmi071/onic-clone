@@ -44,12 +44,12 @@
   }
   
   .nav-links ul li a:hover {
-    color: #007BFF;
+    color: #a62bf2!important;
   }
   
   /* Order SIM button styles */
   .order-sim button {
-    background-color: #007BFF;
+    background-color: #a62bf2!important;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -60,6 +60,6 @@
   }
   
   .order-sim button:hover {
-    background-color: #0056b3;
+    background-color: #a62bf2!important;
   }
   
