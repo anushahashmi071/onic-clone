@@ -24,8 +24,8 @@ body {
   
   position: relative;
   flex-wrap: wrap;
-  /* width: 798px;
-  background-color: rgb(243, 239, 239); */
+   width: 860px; 
+
   
 }
 .logo{
@@ -51,7 +51,7 @@ body {
   padding: 8px;
   font-weight: 700;
   font-size: 16px;
-  width: 798px;
+  /* width: 798px; */
 }
 a{
  
