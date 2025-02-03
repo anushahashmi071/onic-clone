@@ -1,67 +1,255 @@
-/* Reset some default styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+@font-face{
+  font-family: myfont1;
+  src: url(D:\Roboto\Roboto-VariableFont_wdth,wght.ttf);
 }
 
-/* Body and page general styles */
 body {
   font-family: "Roboto", serif;
-  background-color: #f5f5f5;
+ background-color: #f5f5f5;
 }
 
-/* Header styles */
-.header {
+.bg-img{
+  position: absolute;
+  top: 82px;
+  left: 150px;
+  overflow: hidden;
+  max-height: 600px;
+  border-radius: 25px;
+  
+}
+
+
+.main-head{
+  
+  position: relative;
+  flex-wrap: wrap;
+  /* width: 798px;
+  background-color: rgb(243, 239, 239); */
+  
+}
+.logo{
+  position: absolute;
+  top: 80px;
+  left: 150px;
+ 
+}
+
+.nav-logo{
+  width: 20px;
+  position: absolute;
+  background-color: #fff;
+  display: none;
+}
+.top-nav{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
+  position: relative;
+  top: 100px;
+  left: 630px;
   background-color: white;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 35px;
+  padding: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  width: 798px;
 }
-
-.logo h1 {
-  font-size: 30px;
-  color: #333;
-}
-
-.nav-links ul {
-  list-style: none;
-  display: flex;
-}
-
-.nav-links ul li {
-  margin: 0 15px;
-}
-
-.nav-links ul li a {
+a{
+ 
   text-decoration: none;
-  color: #333;
-  font-size: 16px;
-  font-weight: bold;
-  transition: color 0.3s;
-}
+  padding: 15px;
+  color: black
 
-.nav-links ul li a:hover {
-  color: #a62bf2 !important;
-}
 
-/* Order SIM button styles */
-.order-sim button {
-  background-color: #a62bf2 !important;
+}
+.new-badge {
+  background-color: #A020F0;
   color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: sans-serif;
+  padding: 2px 9px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-left: 5px;
+  position: relative;
+  top: -15px;
+  left: -10px;
+  text-shadow: 8px 0px 4px white;
+}
+button{
+  background-color: #A020F0;
+  color: white;
   border-radius: 30px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  font-weight: 600;
+  padding: 5px 60px;
+  font-family: sans-serif;
+  font-size: 16px;
+  border: 1px hidden;
+  overflow: hidden;
+  position: relative;
+  left: 60px;
+}
+.sub-nav{
+  float: left;
+  overflow: hidden;
+
 }
 
-.order-sim button:hover {
-  background-color: #a62bf2 !important;
+.subnav-content{
+display: flex;
+align-items: center;
+position: absolute;
+
+background-color: white;
+
+  
 }
+.subnav-content a{
+ float: left;
+ color: darkgray; 
+ padding: 10px;
+ background-color: #fff;
+ display: block;
+}
+
+.sub-nav:hover.subnav-content a{
+ display: block;
+}
+.section-1{
+  padding: 0px 550px;
+  font-family: myfont1;
+  position: relative;
+  width: 450px;
+  margin-top: 610px;
+
+
+
+}
+.head-1{
+ font-family: sans-serif;
+ font-size: 28px;
+ font-weight:900;
+ margin-left: 100px;
+ position: absolute;
+ color: rgb(44, 44, 44);
+
+}
+
+.para-1{
+  position: absolute;
+  top: 80px;
+  width: 480px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+}
+.sec-btn{
+  position: relative;
+  top: 180px;
+  left: 140px;
+  padding: 10px 60px;
+
+
+}
+.section-2{
+  position: relative;
+  top: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 500px;
+}
+.section-2-head{
+  position: absolute;
+  left: 590px;
+  padding: 14px 68px;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: sans-serif;
+  background-color: rgb(77, 76, 76) ;
+  color: white;
+  border-radius: 38px;
+  width:fit-content;
+}
+
+.deleted-text {
+  position: relative;
+  text-decoration: none;
+}
+
+.deleted-text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 65%;
+  width: 100%;
+  height: 2px;
+  background: red; 
+  transform: rotate(-7deg); 
+  transform-origin: left center;
+}
+
+
+
+.card{
+  position: relative;
+  background-color: white;
+  top: 180px;
+  left: 150px;
+  width: 380px;
+  height: 760px;
+  border: 1px groove rgba(128, 128, 128, 0.253);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 30px;
+  
+  
+  
+  
+  
+}
+.content-footer ul{
+  list-style: none;
+  padding-left: 0px;
+}
+.content-footer li{
+  font-size: 16px;
+  font-weight: 400;
+  font-family: sans-serif;
+  
+}
+.content-footer li::before{
+  content: "*";
+  color: black;
+  font-size: 34px; 
+  font-weight: bold; 
+  padding: 4px 8px;
+}
+.header-1{
+  background-color: #00FA9A;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  color: #A020F0;
+  text-align: center;
+  font-size: 18px;
+
+}
+.content-head{
+  width: 270px;
+  font-size: 24px;
+  text-align: center;
+  color: rgb(53, 53, 53);
+  font-family: sans-serif;
+}
+.card-btn {
+  padding: 18px 80px;
+  font-size: 20px;
+}
+
+
+
 
 
 /* footer */
