@@ -96,6 +96,16 @@ body {
   border-bottom: 2px solid black;
 }
 
+.sec-accordion-content ul li label {
+  font-size: 24px;
+}
+
+.sec-accordion-content p,
+.sec-accordion-content li {
+  font-size: 18px;
+  line-height: 40px;
+}
+
 .sec-accordion-content ol li {
   border: none;
 }
@@ -111,11 +121,13 @@ body {
 .sec-accordion-content .accordion-content ol {
   padding-inline: 20px;
 }
-.sec-accordion-content input:checked ~ span i{
-  transform: rotate(90deg);
-}
-.sec-accordion-content label + input:checked+.accordion-content {
+
+.sec-accordion-content label + input:checked + .accordion-content {
   max-height: 400px;
+}
+
+.sec-accordion-content input{
+  display: none;
 }
 
 /* footer */
@@ -195,8 +207,8 @@ body {
 }
 
 .sec-footer a:active {
-  border: 2px solid #CBD5E0;
-  box-shadow: 1px 1px 20px #CBD5E0;
+  border: 2px solid #cbd5e0;
+  box-shadow: 1px 1px 20px #cbd5e0;
 }
 
 .sec-footer a:hover {
